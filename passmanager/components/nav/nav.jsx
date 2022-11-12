@@ -1,11 +1,6 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import Tabs from '../Tabs/Tabs';
-import Cards from '../Cards/Cards';
-import Pagination  from '../Pagination/pagination';
-import HeaderProfile from '../HeaderProfile/HeaderProfile';
-import SearchTags from '../SearchTags/SearchTags';
 import { createClient, configureChains, defaultChains } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
  
@@ -17,9 +12,6 @@ const client = createClient({
   provider,
   webSocketProvider,
 })
-
-
-    
 
 
 export default function IndexPage() {
@@ -64,8 +56,8 @@ export default function IndexPage() {
   <div className="absolute lg:relative w-64 h-screen shadow bg-gray-100  hidden lg:block">
   <div className="h-16 w-full flex items-center px-8 bg-greenLengs">
                           <Image
-        src="/img/logo-extended.svg"
-        alt="Lenstags Logo"
+        src="/img/logo.svg"
+        alt="Logo"
         width={100}
         height={60}
         
@@ -108,8 +100,8 @@ export default function IndexPage() {
               <div className="flex items-center justify-between px-8">
                   <div className="h-16 w-full flex items-center">
                   <Image
-        src="/img/logo-extended.svg"
-        alt="Lenstags Logo"
+        src="/img/logo.svg"
+        alt="Logo"
         width={100}
         height={60}
         
@@ -170,7 +162,7 @@ export default function IndexPage() {
               <div className="border-t border-black">
                   <div className="w-full flex items-center justify-between px-6 pt-1">
                       <div className="flex items-center  ">
-                      <Image className="" width="30px" height="30px" src="/img/user.png" alt="avatar" />
+                     {/*  <Image className="w-10" width={30} height={30} src="/img/user.png" alt="avatar" /> */}
                           <p className="md:text-xl  text-gray-800 text-base leading-4 ml-2">CryptoNahue</p>
                       </div>
                       <ul className="flex">
@@ -274,7 +266,7 @@ export default function IndexPage() {
                                                     ""
                                                 )}
                                                 <div className="relative p-0 m-0">
-                                                    <Image className="" width="60px" height="60px" src="/img/user.png" alt="avatar" />
+                                              {/*       <Image className="" width="60px" height="60px" src="/img/user.png" alt="avatar" /> */}
                                                     <div className="w-2 h-2 rounded-full bg-green-400 border border-white absolute inset-0 mb-0 mr-0 m-auto" /> 
                                                 </div>
                                             </div>
@@ -292,8 +284,8 @@ export default function IndexPage() {
                             <div className="text-gray-600  visible lg:hidden relative" onClick={() => setShow(!show)}>
                             <div className="flex justify-between w-screen items-center">
                             <div className="ml-3">                 <Image
-                              src="/img/logo-extended.svg"
-                              alt="Lenstags Logo"
+                              src="/img/logo.svg"
+                              alt="Logo"
                               width={100}
                               height={60}
                               
@@ -318,7 +310,7 @@ export default function IndexPage() {
                         {/* Remove class [ h-64 ] when adding a card block */}
                         <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6 ">
                             {/* Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border */}
-                            <HeaderProfile/>
+                    
                           {/*   <div className="flex justify-between items-center">
                                 <div className="w-1/6 h-24 rounded border-dashed border-2 border-gray-300">
                                 Pineados
@@ -339,11 +331,9 @@ export default function IndexPage() {
                                 Pineados
                                 </div>
                             </div> */}
-                            <Tabs/>
-                            <SearchTags/>
+                  
                             <div className="w-full h-auto">
-                            <Cards/>
-                            <Pagination/>
+                   
                             {/* Place your content here */}
                           
                             </div>
