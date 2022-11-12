@@ -1,4 +1,3 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit'
 import React, { useState } from 'react';
 import Image from 'next/image'
 import { createClient, configureChains, defaultChains } from 'wagmi'
@@ -105,7 +104,7 @@ export default function IndexPage() {
         width={100}
         height={60}
         
-      />
+      /> 
                   </div>
                   <div id="closeSideBar" className="flex items-center justify-center h-10 w-10" onClick={() => setShow(!show)}>
                       <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-x" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -148,7 +147,7 @@ export default function IndexPage() {
           </div>
           <div className="w-full">
               <div className="flex justify-center mb-4 w-full px-6 ">
-                  <div className="relative w-full">
+                  {/* <div className="relative w-full">
                       <div className="text-gray-500 absolute ml-4 inset-0 m-auto w-4 h-4">
                           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width={16} height={16} viewBox="0 0 24 24" strokeWidth={1} stroke="#A0AEC0" fill="none" strokeLinecap="round" strokeLinejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" />
@@ -157,13 +156,15 @@ export default function IndexPage() {
                           </svg>
                       </div>
                       <input className="bg-gray-200 focus:outline-none border hover:border-2 hover:border-black rounded-none w-full text-sm text-gray-500  pl-10 py-2" type="text" placeholder="Search" />
-                  </div>
+                  </div> */}
+                  <nav><li>asdaasdads</li><li>asdaasdads</li></nav>
               </div>
               <div className="border-t border-black">
                   <div className="w-full flex items-center justify-between px-6 pt-1">
                       <div className="flex items-center  ">
                      {/*  <Image className="w-10" width={30} height={30} src="/img/user.png" alt="avatar" /> */}
                           <p className="md:text-xl  text-gray-800 text-base leading-4 ml-2">CryptoNahue</p>
+                         
                       </div>
                       <ul className="flex">
                           <li className="cursor-pointer text-white pt-5 pb-3">
@@ -194,10 +195,10 @@ export default function IndexPage() {
 
                     <div className="w-full">
                         {/* Navigation starts */}
-                        <nav className="h-16 flex items-center lg:items-stretch justify-end lg:justify-between bg-greenLengs  relative z-10">
-                            <div className="hidden lg:flex w-full pr-6">
-                                <div className="w-1/2 h-full hidden lg:flex items-center pl-6 pr-24">
-                                    <div className="relative w-full">
+                        <nav className="h-16 flex items-center lg:items-stretch justify-end lg:justify-between  relative z-10">
+                            <div className="hidden lg:flex w-full pr-6 rounded-lg">
+                                <div className="w-1/2 h-full hidden lg:flex items-center pl-6 pr-24 ">
+                                  {/*   <div className="relative w-full">
                                         <div className="text-gray-500 absolute ml-4 inset-0 m-auto w-4 h-4">
                                         
                                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -207,7 +208,27 @@ export default function IndexPage() {
                                             </svg>
                                         </div>
                                         <input className="border border-black focus:outline-none focus:border-black focus:border-2 rounded-none w-full text-sm text-gray-500 bg-greenLengs pl-12 py-2" type="text" placeholder="Search" />
+                                    </div> */}
+                                    <div className="relative w-full">
+                                        <nav>
+                                            <div  className="flex justify-between list-none"><li>
+                                            <a className="text-black font-semibold">Home</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a className="text-black">How it works?</a>
+                                        </li>
+                                        <li>
+                                            <a className="text-black">Features</a>
+                                        </li>
+
+                                      
+                                        
+                                        </div>
+                                        
+                                        </nav>
                                     </div>
+                                   
                                 </div>
                                 <div className="w-1/2 hidden lg:flex">
                                     <div className="w-full flex items-center pl-8 justify-end">
@@ -220,7 +241,7 @@ export default function IndexPage() {
                                           </div>
                                           <p className="text-gray-800  hover:text-black">CREATE</p> */}
                                           
-                                        <div className="h-full w-20 flex items-center justify-center border-r border-l border-black">
+                                        {/* <div className="h-full w-20 flex items-center justify-center border-r border-l border-black">
                                             <div  className="relative cursor-pointer text-gray-600 hover:text-black">
                                                 <svg  xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bell" width={28} height={28} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" />
@@ -236,8 +257,8 @@ export default function IndexPage() {
                                                 <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
                                                 <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
                                             </svg>
-                                        </div>
-                                        <div className="flex items-center relative cursor-pointer" onClick={() => setProfile(!profile)}>
+                                        </div> */}
+                                        <div className="flex items-center relative cursor-pointer bg-black" onClick={() => setProfile(!profile)}>
                                             <div className="rounded-full">
                                                 {profile ? (
                                                     <ul className="p-2 w-full border-r bg-white absolute rounded left-0 shadow mt-12 sm:mt-16 ">
@@ -265,12 +286,13 @@ export default function IndexPage() {
                                                 ) : (
                                                     ""
                                                 )}
-                                                <div className="relative p-0 m-0">
+                                                <div className="relative px-2 py-1 m-0 bg-black">
                                               {/*       <Image className="" width="60px" height="60px" src="/img/user.png" alt="avatar" /> */}
-                                                    <div className="w-2 h-2 rounded-full bg-green-400 border border-white absolute inset-0 mb-0 mr-0 m-auto" /> 
+                                                    <div className="w-2 h-2 rounded-full bg-red-400 absolute inset-0 mb-0 mr-0 m-auto" /> 
                                                 </div>
                                             </div>
-                                            <p className="text-gray-800 text-sm mx-3 hover:text-black">CryptoNahue</p>
+                                            <p className="text-white text-sm mx-3 p-1 rounded-lg bg-black  hover:text-black hover:bg-white">Connect</p>
+                                     
                                             <div className="cursor-pointer text-gray-600">
                                                 <svg aria-haspopup="true" xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-down" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" />
