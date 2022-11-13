@@ -98,12 +98,20 @@ const Index = () => {
              <p class="text-sm font-semibold text-gray-900  truncate ">
                 Subsocial
              </p>
-             <p class="text-sm text-gray-500 truncate ">
-                HoldMyPass
+             <p class="text-sm text-purple-500  truncate ">
+                Social Media
              </p>
           </div>
           <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-          <img class="w-6 h-6 rounded-full cursor-pointer" src="/icons/vertical-dots.svg" />
+          <div className="dropdown dropdown-end">
+  <label tabIndex={0} className="">   
+  <img class="w-6 h-6 rounded-full cursor-pointer" src="/icons/vertical-dots.svg" />
+</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white  text-black rounded-box w-52">
+    <li ><a className="active:bg-black">View on MoonScan</a></li>
+    <li><a className="active:bg-black">Favorite</a></li>
+  </ul>
+</div>
           </div>
        </div>
     </li>
@@ -117,12 +125,20 @@ const Index = () => {
              <p class="text-sm font-semibold text-gray-900  truncate ">
                 Subsocial
              </p>
-             <p class="text-sm text-gray-500 truncate ">
-                HoldMyPass
+             <p class="text-sm text-purple-500 truncate ">
+                Social Media
              </p>
           </div>
           <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
-          <img class="w-6 h-6 rounded-full cursor-pointer" src="/icons/vertical-dots.svg" />
+          <div className="dropdown dropdown-end">
+  <label tabIndex={0} className="">   
+  <img class="w-6 h-6 rounded-full cursor-pointer" src="/icons/vertical-dots.svg" />
+</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white  text-black rounded-box w-52">
+    <li ><a className="active:bg-black">View on MoonScan</a></li>
+    <li><a className="active:bg-black">Favorite</a></li>
+  </ul>
+</div>
           </div>
        </div>
     </li>
@@ -135,15 +151,22 @@ const Index = () => {
              <p class="text-sm font-semibold text-gray-900  truncate ">
                 Subsocial
              </p>
-             <p class="text-sm text-gray-500 truncate ">
-                HoldMyPass
+             <p class="text-sm text-purple-500  truncate ">
+                Social Media
              </p>
           </div>
           <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
           
-          <img class="w-6 h-6 rounded-full cursor-pointer" src="/icons/vertical-dots.svg" />
-
-
+          <div className="dropdown dropdown-end">
+  <label tabIndex={0} className="">   
+  <img class="w-6 h-6 rounded-full cursor-pointer" src="/icons/vertical-dots.svg" />
+</label>
+  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white  text-black rounded-box w-52">
+    <li ><a className="active:bg-black">View on MoonScan</a></li>
+    <li><a className="active:bg-black">Favorite</a></li>
+  </ul>
+</div>
+       
           </div>
        </div>
     </li>
