@@ -6,8 +6,6 @@ const Index = () => {
       
     <div>
 
-
-
     <div className="flex justify-between mb-5">
         <div><h2 className="font-bold text-3xl">All Items</h2></div>
         <div className="flex">
