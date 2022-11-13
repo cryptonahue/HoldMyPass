@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
 import Hero from '../hero/hero'
-import link 
+
 
 import Sidebar from '../sidebar/sidebar-home'
 import MobileNavBar from '../nav-mobile/nav-mobile'
@@ -200,9 +200,9 @@ export default function IndexPage() {
                                         </div> */}
                                         <div className="flex items-center relative cursor-pointer px-3 py-1 " onClick={() => setProfile(!profile)}>
                                             
-                                        <Link href="/">Home
+                                        
                                             <a href='/items' className="btn bg-black text-white">Connect</a>
-                                            </Link>
+                                            
                                           {/*   <div className="cursor-pointer text-gray-600">
                                                 <svg aria-haspopup="true" xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-down" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" />
