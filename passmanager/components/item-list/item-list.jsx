@@ -75,7 +75,11 @@ const Index = () => {
        </div>
     </li>
 
-    <li class="sm:pb-4 shadow py-2 px-3 rounded-lg mb-4   w-full">
+
+
+
+
+    <li href="#my-modal-2" class="sm:pb-4 shadow py-2 px-3 rounded-lg mb-4   w-full">
        <div class="flex items-center space-x-4 w-full  ">
           <div class="flex-shrink-0">
              <img class="w-8 h-8 rounded-full" src="/img/subsocial.png" />

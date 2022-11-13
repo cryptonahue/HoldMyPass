@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
+import Hero from '../hero/hero'
 
-import Sidebar from '../sidebar/sidebar'
+import Sidebar from '../sidebar/sidebar-home'
 import MobileNavBar from '../nav-mobile/nav-mobile'
 import Itemlist from '../item-list/item-list'
  
@@ -237,7 +238,7 @@ export default function IndexPage() {
                         </nav>
                         {/* Navigation ends */}
                         {/* Remove class [ h-64 ] when adding a card block */}
-                        <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6 ">
+                       
                             {/* Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border */}
                     
                           {/*   <div className="flex justify-between items-center">
@@ -260,18 +261,18 @@ export default function IndexPage() {
                                 Pineados
                                 </div>
                             </div> */}
-                   <div className="w-full h-auto">
+                   
                    
                    {/* Place your content here */}
-              
-                 
-                   </div>
+             
+                  
+                   
                            
-                        </div>
+                        
                        
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div> <Hero/>
         </>
     );
 }
