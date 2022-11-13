@@ -11,12 +11,12 @@ function Index() {
                         <div className="bg-white rounded-md shadow fixed overflow-y-auto sm:h-auto w-10/12 md:w-8/12 lg:w-1/2 2xl:w-2/5">
                             <div className="bg-black rounded-tl-md rounded-tr-md px-4 md:px-8 md:py-4 py-7 flex items-center justify-between">
                                 <p className="text-base font-semibold text-white">Add Item</p>
-                                <button onclick="popuphandler(false)" className="focus:outline-none">
+                                <label onclick="my-modal" htmlFor="my-modal"  className="">
                                     <svg width={28} height={28} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M21 7L7 21" stroke="#A1A1AA" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M7 7L21 21" stroke="#A1A1AA" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
-                                </button>
+                                </label>
                             </div>
 
                          

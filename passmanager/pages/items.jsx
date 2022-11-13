@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../components/header/header'
+import Header from '../components/header/header-items'
 import AddItemButtom from '../components/items/add-item-buttom'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="img/favicon.png" />
       </Head>
       <Header/>
- <AddItemButtom/>
+      <AddItemButtom/>
     
       <main>
     </main>
