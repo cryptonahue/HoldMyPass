@@ -92,7 +92,7 @@ function Index() {
                                     <label onclick="my-modal" htmlFor="my-modal"  className="btn">
                                         Cancel
                                     </label>
-                                    <label htmlFor="my-modal" className="btn">Encrypt</label>
+                                    <label htmlFor="my-modal" className="btn">Encrypt and Publish</label>
                                     </div>
                                 </div>
                             </div>

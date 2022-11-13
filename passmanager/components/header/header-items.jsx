@@ -21,7 +21,7 @@ export default function IndexPage() {
 
 
 
-            <div className="w-full h-full bg-gray-100">
+            <div className="w-full h-screen bg-gray-100">
                 <div className="flex flex-no-wrap">
                   
                <Sidebar/>
@@ -51,7 +51,7 @@ export default function IndexPage() {
                       </svg>
                   </div>
               </div>
-              <ul aria-orientation="vertical" className=" py-6">
+            {/*   <ul aria-orientation="vertical" className=" py-6">
                   <li className="pl-6 cursor-pointer text-white text-sm leading-3 tracking-normal pb-4 pt-5 hover:font-semibold focus:outline-none">
                       <div className="flex items-center">
                           <div className="w-6 h-6 md:w-8 md:h-8">
@@ -80,7 +80,7 @@ export default function IndexPage() {
                       </div>
                   </li>
                  
-              </ul>
+              </ul> */}
           </div>
           <div className="w-full">
               <div className="flex justify-center mb-4 w-full px-6 ">
@@ -199,8 +199,8 @@ export default function IndexPage() {
                                         <div className="flex items-center relative cursor-pointer px-3 py-1  rounded-lg" onClick={() => setProfile(!profile)}>
                                             <div className="rounded-full">
                                                 {profile ? (
-                                                    <ul className="p-2 w-full border-r bg-white absolute rounded left-0 shadow mt-12 sm:mt-12 ">
-                                                        <li className="flex w-full justify-between text-gray-600 hover:text-black cursor-pointer items-center">
+                                                    <ul className="p-2 w-full border-r bg-white absolute rounded left-0 shadow mt-12 sm:mt-12">
+                                                        <li className="flex w-full justify-between text-gray-600 hover:text-black cursor-pointer items-center ">
                                                             <div className="flex items-center">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width={18} height={18} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                                     <path stroke="none" d="M0 0h24v24H0z" />
@@ -210,8 +210,8 @@ export default function IndexPage() {
                                                                 <span className="text-sm ml-2">My Profile</span>
                                                             </div>
                                                         </li>
-                                                        <li className="flex w-full justify-between text-gray-600 hover:text-black cursor-pointer items-center mt-2">
-                                                            <div className="flex items-center">
+                                                        <li className="flex w-full justify-between text-gray-600 hover:text-black cursor-pointer items-center mt-2 ">
+                                                            <div className="flex items-center ">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-logout" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                                     <path stroke="none" d="M0 0h24v24H0z" />
                                                                     <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />

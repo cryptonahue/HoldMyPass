@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="img/favicon.png" />
       </Head>
       <Header/>
-      <AddItemButtom/>
+     
     
       <main>
     </main>

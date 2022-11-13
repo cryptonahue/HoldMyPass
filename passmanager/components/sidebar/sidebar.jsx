@@ -18,7 +18,7 @@ const Index = () => (
        
      />
  </div>
-  <ul aria-orientation="vertical" className=" py-6">
+  {/* <ul aria-orientation="vertical" className=" py-6">
      <li className="pl-6 cursor-pointer  text-sm leading-3 tracking-normal pb-4 pt-5 text-black hover:font-semibold focus:font-semibold focus:outline-none">
          <div className="flex items-center">
              <div>
@@ -44,7 +44,7 @@ const Index = () => (
          </div>
      </li>
     
- </ul> 
+ </ul>  */}
 </div>
 
 
